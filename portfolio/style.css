@@ -147,3 +147,9 @@ figure.fig img { margin-left: auto; margin-right: auto; }
 .cover .pdesc { font-size: 8.8pt; font-weight: 600; color: #fff; line-height: 1.4; }
 .cover .pmeta { font-size: 7.8pt; color: #b4c3e3; margin-top: .8mm; }
 .cover .ptech { font-size: 7.6pt; color: #8fa6d6; margin-top: .4mm; }
+
+/* 본문 페이지 여백 정리 (내 기여 블록이 들어가도 한 장에 들어가도록) */
+.page:not(.cover) { line-height: 1.42; }
+.page:not(.cover) h2 { margin: 3mm 0 1.1mm; }
+.page:not(.cover) td, .page:not(.cover) th { padding: .9mm 2mm; }
+.page:not(.cover) .tags { margin: 2.4mm 0 .6mm; }
