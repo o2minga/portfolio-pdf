@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>백민하 포트폴리오</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========================================================
+  각 <section class="page"> 가 PDF 한 페이지(A4)입니다.
+  글을 고치고 저장하면 PDF가 자동으로 다시 만들어집니다.
+  이미지는 portfolio/assets/ 에 넣고 .ph 박스를 <figure class="fig"> 로 바꾸세요.
+========================================================== -->
+
+<!-- 01 표지 + 프로젝트 한눈에 보기 -->
+<section class="page cover">
+  <div class="hero">
+    <!-- 증명사진: portfolio/assets/photo.jpg 가 들어갑니다 (3:4 비율 권장) -->
+    <div class="photo"><span>증명사진</span><div class="img" style="background-image:url('assets/photo.jpg')"></div></div>
+    <h1>다양한 현장 소통 경험으로<br>비즈니스 맥락을 정교하게<br>읽어내는 <em>데이터 분석가</em><br>백민하입니다.</h1>
+  </div>
+  <p class="lead">팀 프로젝트에서 회의록을 쓰며 논의를 정리했고, 그 안에서 필요한 것을 찾아 데이터와 코드로 풀어 왔습니다. 시계열·설문 분석에서는 수치가 말하는 맥락을 읽는 연습을 했습니다. 앞으로는 AI와 데이터로 사용자들의 불편함을 해소하는 서비스를 만들고 싶습니다.</p>
+  <dl class="grid">
+    <dt>EDUCATION</dt><dd>제주대학교 전산통계학과 졸업<small>우리WON 청년IT아카데미 1기 (진행 중)</small></dd>
+    <dt>CERTIFICATES</dt><dd>ADsP · SQLD · 사회조사분석사 2급</dd>
+    <dt>SKILLS</dt><dd>Python · R · SQL · Java · Spring Boot · MySQL · JavaScript · HTML/CSS · SASS · 시계열분석</dd>
+    <dt>INTEREST &amp; GOAL</dt><dd>보험·금융 서비스의 AI 활용, 고객에게 맞는 상품 추천과 안내<small>목표: 보험·금융 AI·데이터 직무</small></dd>
+    <dt>CONTACT</dt><dd><a href="mailto:o2.mingha@gmail.com">o2.mingha@gmail.com</a></dd>
+  </dl>
+
+  <div class="ov-title">대표 프로젝트</div>
+  <div class="ov-sub">금융 AI 서비스 · 시계열 예측 · 공간 데이터 분석</div>
+  <div class="ov">
+    <div class="prj">
+      <div class="pname"><small>01</small>ForWON</div>
+      <dl>
+        <div><dt>참여인원</dt><dd>5인 팀</dd></div>
+        <div class="w3"><dt>서비스 형식</dt><dd>웹 기반 AI 안내·상담 연결 서비스</dd></div>
+        <div class="w2"><dt>기술스택</dt><dd>Spring Boot · Spring AI · OpenAI API · React / Vite · JPA · MySQL</dd></div>
+        <div class="w2"><dt>역할</dt><dd>기획 · UI/UX · 고객 페이지 개발</dd></div>
+      </dl>
+    </div>
+    <div class="prj">
+      <div class="pname"><small>02</small>SK하이닉스<br>주가 예측</div>
+      <dl>
+        <div><dt>참여인원</dt><dd>4인 팀</dd></div>
+        <div class="w3"><dt>서비스 형식</dt><dd>Transformer 예측 모델 + SHAP·LIME 해석</dd></div>
+        <div class="w2"><dt>기술스택</dt><dd>Python · PyTorch · Transformer · FFT 주기성 · SHAP · LIME</dd></div>
+        <div class="w2"><dt>역할</dt><dd>데이터 엔지니어링 · 전처리</dd></div>
+      </dl>
+    </div>
+    <div class="prj">
+      <div class="pname"><small>03</small>제주 관광객<br>수요 예측</div>
+      <dl>
+        <div><dt>참여인원</dt><dd>개인 (1인)</dd></div>
+        <div class="w3"><dt>서비스 형식</dt><dd>시계열 분석·12개월 수요 예측 (월별 입도현황 2018~2024)</dd></div>
+        <div class="w2"><dt>기술스택</dt><dd>R · 시계열 분해 · ADF 검정 · ACF·PACF · SARIMA</dd></div>
+        <div class="w2"><dt>역할</dt><dd>개인 프로젝트로 분석부터 예측까지 전 과정 수행</dd></div>
+      </dl>
+    </div>
+    <div class="prj">
+      <div class="pname"><small>04</small>알려주카</div>
+      <dl>
+        <div><dt>참여인원</dt><dd>5인 팀</dd></div>
+        <div class="w3"><dt>서비스 형식</dt><dd>제주 청년 정보 플랫폼 (온·오프라인) + 입지 선정 분석</dd></div>
+        <div class="w2"><dt>기술스택</dt><dd>웹 개발 · C++ · QGIS · Python · 공간 데이터 분석</dd></div>
+        <div class="w2"><dt>역할</dt><dd>생활정보 카테고리 SW 개발·디버깅, 입지분석 시각화</dd></div>
+      </dl>
+    </div>
+  </div>
+  <footer><span>백민하 Portfolio</span><span>01</span></footer>
+</section>
+
+<!-- 02 ForWON -->
+<section class="page">
+  <div class="eyebrow">Project 01</div>
+  <h1>ForWON: 금융 업무의 막힌 순간까지 이해하는 AI 가이드</h1>
+  <p class="sub">외국인 고객이 "어디를 눌러야 하는지"와 "무엇이 막혔는지"를 AI가 함께 풀어 주는 서비스</p>
+  <div class="meta">
+    <div><small>시기</small><span>2026.10</span></div>
+    <div><small>인원</small><span>5인 팀</span></div>
+  </div>
+  <div class="tags"><span>Spring Boot</span><span>Spring AI</span><span>OpenAI API</span><span>React / Vite</span><span>JPA · MySQL</span></div>
+
+  <h2>문제: 다국어 앱이 있어도 "막힌 순간"은 고객 몫</h2>
+  <div class="stats">
+    <div><strong>약 703만 명</strong><span>5대 시중은행 외국인 고객 합산</span></div>
+    <div><strong>+10.5%</strong><span>2023년 말 대비 증가</span></div>
+  </div>
+  <p style="font-size:7.6pt;color:var(--muted)">2026년 6월 말 기준, 은행 간 중복 포함 가능</p>
+  <ul class="dots">
+    <li>어디서 업무를 찾아야 하는지 모릅니다.</li>
+    <li>다음 단계를 어떻게 진행할지 모릅니다.</li>
+    <li>막혔을 때 상담원에게 상황을 어떻게 설명할지 모릅니다.</li>
+  </ul>
+
+  <h2>해결: 질문 → 의도 분류 → 경로 안내</h2>
+  <p>고객이 모국어로 질문하면 LLM이 업무 의도를 분류하고, 미리 정의해 둔 경로를 조회해 화면의 버튼을 하이라이트합니다. 고객은 강조된 버튼을 직접 눌러 진행합니다.</p>
+  <figure class="fig"><img src="assets/forwon1.png" style="width:128mm"><figcaption>질문부터 상담까지 하나의 흐름</figcaption></figure>
+
+  <h2>막힘 감지에서 상담 연결까지</h2>
+  <p>서버는 화면 진입과 정체를 기록하다가, 아래 기준에 걸리면 고객에게 상담 연결을 제안합니다.</p>
+  <table>
+    <tr><th style="width:30mm">감지 항목</th><th style="width:44mm">기준</th><th>의미</th></tr>
+    <tr><td>화면 정체</td><td>기본 7초 동안 다음 화면 없음</td><td>어디를 눌러야 할지 몰라 멈춘 상태</td></tr>
+    <tr><td>경로 이탈</td><td>세션 내 3회 누적</td><td>안내 경로에서 반복해서 벗어난 상태</td></tr>
+  </table>
+  <p>고객이 수락하면 대화와 행동 기록을 AI가 요약해 상담원에게 넘기고, 상담원은 고객이 막힌 화면을 <b>읽기 전용</b>으로 확인합니다. AI 요약이 실패하면 규칙 기반 요약으로 대체해 상담 연결이 끊기지 않게 했습니다.</p>
+
+  <h2>AI와 규칙의 역할 분담</h2>
+  <div class="cols" style="align-items:flex-start">
+    <figure class="fig" style="margin-top:.5mm"><img src="assets/forwon2.png"><figcaption>시스템 아키텍처: 화면 안내, 업무 규칙, AI 처리, 데이터 저장을 분리</figcaption></figure>
+    <div>
+      <table style="margin-top:.5mm">
+        <tr><th style="width:13mm">AI</th><td style="font-weight:400">고객이 무엇을 원하는지 이해, 대화·행동 기록 요약</td></tr>
+        <tr><th>규칙</th><td style="font-weight:400">어느 화면으로 안내할지 결정, 정체·이탈 감지, 요약 실패 시 대체 요약</td></tr>
+      </table>
+      <p>AI가 틀리더라도 안내 경로는 통제할 수 있게 하려는 구조입니다.</p>
+      <p>앞으로는 실제 금융 시스템 연동, 인증·보안 강화, 분산 세션 관리, 상담 통신 개선으로 확장할 계획입니다.</p>
+    </div>
+  </div>
+  <footer><span>백민하 Portfolio</span><span>02</span></footer>
+</section>
+
+<!-- 03 SK하이닉스 -->
+<section class="page">
+  <div class="eyebrow">Project 02</div>
+  <h1>SK하이닉스 주가 예측: Transformer 기반 시계열 모델</h1>
+  <p class="sub">복잡한 주가 흐름을 예측하고, 그 근거까지 해석한 프로젝트</p>
+  <div class="meta">
+    <div><small>유형</small><span>팀 프로젝트</span></div>
+    <div><small>인원</small><span>4인 팀</span></div>
+    <div><small>대상</small><span>SK하이닉스 주가</span></div>
+  </div>
+  <div class="tags"><span>Python</span><span>PyTorch</span><span>Transformer</span><span>FFT 주기성</span><span>SHAP · LIME</span></div>
+
+  <h2>문제의식</h2>
+  <p>주가는 비선형이고 비정상적이라 기존 통계·머신러닝 모델로는 예측이 어렵습니다. 그래서 <b>시계열 분해 + FFT 주기성 분석 + Transformer</b>를 결합한 모델을 만들고, 예측값에 그치지 않고 <b>왜 그렇게 예측했는지 설명</b>할 수 있도록 해석 기법까지 붙이는 것을 목표로 했습니다.</p>
+
+  <h2>데이터와 입력 구성</h2>
+  <table>
+    <tr><th style="width:30mm">항목</th><th>내용</th></tr>
+    <tr><td>입력 변수</td><td>SK하이닉스 종가, 거래량, KOSPI 지수, 환율</td></tr>
+    <tr><td>전처리</td><td>변수별 정규화 후 90일 단위로 묶어 입력</td></tr>
+  </table>
+
+  <h2>모델 구조</h2>
+  <div class="flow">
+    <div class="step"><b>입력</b>90일 윈도우<br>(4개 변수)</div>
+    <div class="step"><b>시계열 분해</b>이동평균으로 추세와 계절성 분리</div>
+    <div class="step"><b>포지셔널 인코딩</b>시간 순서 정보 부여</div>
+    <div class="step"><b>인코더</b>멀티헤드 셀프어텐션</div>
+    <div class="step"><b>출력</b>예측 평균과 예측 밴드</div>
+  </div>
+
+  <h2>학습과 검증</h2>
+  <table>
+    <tr><th style="width:30mm">항목</th><th>설정</th><th>이유 / 의도</th></tr>
+    <tr><td>학습</td><td>AMP 혼합정밀도, AdamW (학습률 3e-4)</td><td>학습 속도와 메모리 효율</td></tr>
+    <tr><td>검증</td><td>Walk-Forward 검증 (5개 fold)</td><td>시간 순서를 지켜 미래 정보 누수와 과적합 점검</td></tr>
+    <tr><td>결과 표현</td><td>예측 평균 + 밴드, 실제 종가와 비교</td><td>밴드는 볼린저 밴드의 개념을 빌려 해석</td></tr>
+  </table>
+  <figure class="fig"><img src="assets/skhighnix.png" style="width:102mm"><figcaption>실제 종가와 Transformer 예측 평균·예측 밴드 비교</figcaption></figure>
+
+  <h2>해석: SHAP으로 본 예측 근거</h2>
+  <ul class="dots">
+    <li>예측 시점에서 <b>약 90일 전 데이터</b>의 영향이 가장 크고, 시점이 가까워질수록 영향이 줄었습니다.</li>
+    <li>종가, 거래량, KOSPI, 환율이 <b>고르게 기여</b>했고, 그중 종가의 영향이 조금 더 컸습니다.</li>
+  </ul>
+
+  <h2>한계와 개선 방향</h2>
+  <div class="cols">
+    <div><p><b class="no">한계</b><br>코로나19 같은 예외적 사건에는 약하고, 어텐션 패턴을 해석하기 어렵습니다.</p></div>
+    <div><p><b class="ok">개선안</b><br>글로벌 반도체 지수나 원자재 가격 같은 변수를 추가하고, 여러 모델을 앙상블합니다.</p></div>
+  </div>
+  <footer><span>백민하 Portfolio</span><span>03</span></footer>
+</section>
+
+<!-- 04 제주 관광객 수요 예측 -->
+<section class="page">
+  <div class="eyebrow">Project 03 · 개인 프로젝트</div>
+  <h1>제주 관광객 수요 예측: 시계열 분석으로 12개월 앞을 보다</h1>
+  <p class="sub">제주특별자치도관광협회 월별 입도현황(2018~2024)으로 2025년 12개월 수요를 예측</p>
+  <div class="tags"><span>R</span><span>시계열 분해</span><span>ADF 검정</span><span>ACF · PACF</span><span>SARIMA</span><span>생성형 AI 활용</span></div>
+  <div class="stats">
+    <div><strong>8.46%</strong><span>MAPE (예측 오차)</span></div>
+    <div><strong style="font-size:11pt;padding:1.4mm 0">(1,1,1)(1,1,1)[12]</strong><span>최종 선정 모델</span></div>
+    <div><strong>1856.87</strong><span>AIC</span></div>
+  </div>
+
+  <h2>1단계 · 데이터 탐색: 시계열 분해</h2>
+  <ul class="dots">
+    <li><b>계절성</b>: 매년 7~8월과 4월에 방문객이 늘어납니다.</li>
+    <li><b>충격과 회복</b>: 2020~2021년 코로나로 크게 줄었다가 회복해, 2023~2024년에는 이전 수준에 가까워졌습니다.</li>
+  </ul>
+
+  <h2>2단계 · 정상성 검정: ADF 검정을 단계별로</h2>
+  <table>
+    <tr><th>처리 단계</th><th style="width:22mm">p-value</th><th style="width:30mm">정상성</th></tr>
+    <tr><td>계절조정 데이터</td><td>0.33</td><td class="no">비정상</td></tr>
+    <tr><td>계절 차분</td><td>0.29</td><td class="no">비정상</td></tr>
+    <tr><td>계절 차분 + 일반 차분</td><td>0.01</td><td class="ok">정상 (만족)</td></tr>
+  </table>
+  <p>계절 차분만으로는 비정상성이 남아, 일반 차분까지 더해야 정상성이 확보된다고 판단했습니다. 그래서 모델의 차분 차수를 비계절·계절 모두 1로 두었습니다.</p>
+
+  <h2>3단계 · 차수 결정과 진단</h2>
+  <div class="flow">
+    <div class="step"><b>ACF · PACF</b>lag 1과 lag 12가 유의</div>
+    <div class="step"><b>차수 확정</b>비계절·계절 구성요소를 모두 (1,1,1)로 결정</div>
+    <div class="step"><b>잔차 진단</b>자기상관 없음, 정규분포에 가까움</div>
+    <div class="step"><b>예측</b>2025년 12개월</div>
+  </div>
+
+  <h2>생성형 AI를 쓴 방식: 제안받고, 검증하고, 비교하기</h2>
+  <p>파라미터를 정할 때 생성형 AI의 제안을 받았지만, 그래프 해석만으로 나온 조합은 계절성을 충분히 반영하지 못했습니다. 그대로 쓰지 않고 위의 ADF 검정으로 직접 확인해 <b>일반 차분이 더 필요하다</b>고 판단했습니다. 이후 AI가 제안한 SARIMA 구조를 바탕으로 구성요소를 바꿔 가며 여러 조합을 비교했고, 최종 모델을 선정했습니다.</p>
+
+  <figure class="fig"><img src="assets/timeseries.png" style="width:128mm"><figcaption>2025년 12개월 예측 결과. 급격한 변화 없이 안정적으로 유지될 것으로 예상</figcaption></figure>
+
+  <h2>배운 점</h2>
+  <p>AI의 제안은 통계 검정으로 다시 확인한 뒤에 썼고, 그래서 <b>어떤 결과를 왜 믿는지 설명</b>할 수 있었습니다. 다음에는 다변량 모델과 머신러닝으로 예측을 개선해 보려 합니다.</p>
+  <footer><span>백민하 Portfolio</span><span>04</span></footer>
+</section>
+
+<!-- 05 알려주카 -->
+<section class="page">
+  <div class="eyebrow">Project 04 · 5인 팀</div>
+  <h1>알려주카: 제주 청년을 위한 정보 플랫폼</h1>
+  <p class="sub">제주의 다양한 정보를 제공하고 온·오프라인 네트워크를 만드는 서비스</p>
+  <div class="meta">
+    <div><small>인원</small><span>5인 팀</span></div>
+    <div><small>담당</small><span>생활정보 개발·디버깅, 입지분석 시각화</span></div>
+  </div>
+  <div class="tags"><span>웹 개발·디버깅</span><span>C++</span><span>QGIS</span><span>Python</span><span>공간 데이터 분석</span></div>
+
+  <h2>왜 만들었나</h2>
+  <p>제주에서는 20대 청년의 전출이 가장 많아 청년 유출이 이어지고 있습니다. 청년이 필요한 정보를 한곳에서 찾고 서로 연결될 수 있게 하면 정착에 도움이 된다고 보고, 도에서 청년 유출을 막으려는 방향과 맞는 서비스를 기획했습니다.</p>
+
+  <h2>무엇을 만들었나</h2>
+  <table>
+    <tr><th style="width:18mm">구분</th><th style="width:44mm">서비스</th><th>내용</th></tr>
+    <tr><td>온라인</td><td>소모임 추천 공간</td><td>취향을 분석해 소모임을 추천</td></tr>
+    <tr><td>온라인</td><td>취업정보게시판</td><td>대학과 공공기관의 취업 정보를 한곳에 모음</td></tr>
+    <tr><td>온라인</td><td>생활정보게시판</td><td>관광·복지 정보를 공유</td></tr>
+    <tr><td>온라인</td><td>회원가입 페이지</td><td>회원 유형별로 흐름이 나뉘는 구성 (C++ 모듈)</td></tr>
+    <tr><td>오프라인</td><td>정보상담센터</td><td>디지털 취약계층이 교육과 상담을 받을 수 있는 공간 구상</td></tr>
+  </table>
+  <div class="cols">
+    <figure class="fig"><img src="assets/capstone.png"><figcaption>온라인 서비스 구성</figcaption></figure>
+    <figure class="fig"><img src="assets/capstone2.png"><figcaption>생활정보 페이지 (관광 · 복지)</figcaption></figure>
+  </div>
+
+  <h2>입지 선정: 데이터로 위치를 정하다</h2>
+  <div class="flow">
+    <div class="step"><b>① 1차 선정</b>행정동 간 예상 OD 교통량 분석<small>→ 행정동 13곳</small></div>
+    <div class="step"><b>② 그리드화</b>선정 지역을 그리드로 분할<small>→ 후보 85곳</small></div>
+    <div class="step"><b>③ 요인 점수화</b>가점·감점 요인 데이터셋 구축</div>
+    <div class="step"><b>④ 정규화·합산</b>Min-Max 정규화 후 점수 합산<small>→ 최종 8곳</small></div>
+  </div>
+  <table>
+    <tr><th style="width:24mm">구분</th><th>요인</th></tr>
+    <tr><td class="ok">가점 요인</td><td>생산가능인구, 도로 통행량, 주차장 접근성</td></tr>
+    <tr><td class="no">감점 요인</td><td>공시지가, 전기차 충전소·관광지·버스정류장까지의 거리</td></tr>
+  </table>
+  <figure class="fig"><img src="assets/capstone3.png" style="width:98mm"><figcaption>정보상담센터 입지 선정 결과 (제주공항 구역, 제2공항 예정지 포함 8곳)</figcaption></figure>
+  <footer><span>백민하 Portfolio</span><span>05</span></footer>
+</section>
+
+</body>
+</html>

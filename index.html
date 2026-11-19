@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header id="titlebar">
+    <div class="tabs">
+      <div class="tab active"><span class="pdf-icon">PDF</span><span id="docName">portfolio.pdf</span></div>
+    </div>
+    <div class="spacer"></div>
+    <button id="btnTheme" title="테마 전환">◐</button>
+  </header>
+
+  <div id="toolbar">
+    <button id="btnSidebar" title="썸네일 (S)">☰</button>
+    <div class="sep"></div>
+    <button id="btnPrev" title="이전 페이지">▲</button>
+    <button id="btnNext" title="다음 페이지">▼</button>
+    <div class="pageBox"><input id="pageInput" type="number" min="1" value="1" /><span>/ <b id="pageCount">–</b></span></div>
+    <div class="sep"></div>
+    <button id="btnZoomOut" title="축소 (-)">−</button>
+    <select id="zoomSelect">
+      <option value="fit-width">너비 맞춤</option>
+      <option value="fit-page">페이지 맞춤</option>
+      <option value="0.5">50%</option><option value="0.75">75%</option>
+      <option value="1">100%</option><option value="1.25">125%</option>
+      <option value="1.5">150%</option><option value="2">200%</option>
+    </select>
+    <button id="btnZoomIn" title="확대 (+)">+</button>
+    <div class="sep"></div>
+    <button data-tool="hand" class="toggle active" title="손 도구 (H)">✋</button>
+    <button data-tool="select" class="toggle" title="텍스트 선택 (V)">⌶</button>
+    <button id="btnRotate" title="회전 (R)">⟳</button>
+    <div class="sep"></div>
+    <button data-tool="pen" class="toggle" title="펜 (P)">✏️</button>
+    <button data-tool="hl" class="toggle" title="형광펜 (M)">🖍</button>
+    <button data-tool="text" class="toggle" title="텍스트 (T)">T</button>
+    <button data-tool="erase" class="toggle" title="지우개 (E)">🧽</button>
+    <input id="colorInput" type="color" title="색상" />
+    <button id="btnUndo" title="실행 취소 (Ctrl+Z)">↶</button>
+    <button id="btnRedo" title="다시 실행 (Ctrl+Y)">↷</button>
+    <button id="btnClear" title="모두 지우기">🗑</button>
+    <button id="btnSave" title="편집본 PDF로 저장">💾</button>
+    <div class="spacer"></div>
+    <div class="search"><input id="searchInput" placeholder="검색 (Ctrl+F)" /><span id="searchCount"></span></div>
+    <a id="btnGithub" class="btn" href="https://github.com/o2minga" target="_blank" rel="noopener" title="GitHub">
+      <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+    </a>
+    <a id="btnNewTab" class="btn" href="/portfolio.pdf" target="_blank" rel="noopener" title="PDF 새 탭에서 열기">↗</a>
+    <button id="btnDownload" title="다운로드">⬇</button>
+    <button id="btnPrint" title="인쇄">🖶</button>
+    <button id="btnFullscreen" title="전체화면 (F)">⛶</button>
+  </div>
+
+  <main id="workspace">
+    <aside id="sidebar"><div id="thumbs"></div></aside>
+    <section id="viewer"><div id="pages"></div></section>
+  </main>
+
+  <div id="statusbar"><span id="statusLeft">로딩 중…</span><span id="statusRight"></span></div>
+  <div id="loading">PDF 불러오는 중…</div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
