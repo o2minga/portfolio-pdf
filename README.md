@@ -12,10 +12,10 @@
 
 | # | 프로젝트 | 형태 | 내 담당 | 핵심 기술 |
 | --- | --- | --- | --- | --- |
-| 01 | ForWON: 금융 업무의 막힌 순간까지 이해하는 AI 가이드 (2026.10) | 5인 팀 | 기획 · UI/UX · 고객 페이지 개발 | Spring Boot · Spring AI · OpenAI API · React / Vite · JPA · MySQL |
+| 01 | ForWON: 금융 업무의 막힌 순간까지 이해하는 AI 가이드 (2026.10) | 5인 팀 | 기획 · UI/UX · 고객 페이지 개발 | Spring Boot · Spring AI · OpenAI API · React / Vite · JPA · SQL (MySQL) · HTML · CSS |
 | 02 | SK하이닉스 주가 예측: Transformer 기반 시계열 모델 (2025.03~2025.06) | 4인 팀 | 데이터 엔지니어링 · 전처리 | Python · PyTorch · Transformer · FFT · SHAP · LIME |
 | 03 | 제주 관광객 수요 예측: 시계열 분석으로 12개월 앞을 보다 (2024.11~2024.12) | 개인 | 분석부터 예측까지 전체 | R · 시계열 분해 · ADF 검정 · ACF·PACF · SARIMA |
-| 04 | 제주 4·3 기록을 스토리 웹페이지로: AI 워크플로우 구축 (2026.08) | 2인 팀 | 에이전트·스킬 설계 · 오케스트레이션 · 웹 연동·검증 | AI 에이전트 · 스킬 · 오케스트레이션 · Supabase · Leaflet |
+| 04 | 제주 4·3 기록을 스토리 웹페이지로: AI 워크플로우 구축 (2026.08) | 2인 팀 | 에이전트·스킬 설계 · 오케스트레이션 · 웹 연동·검증 | AI 에이전트 · 스킬 · 오케스트레이션 · Supabase · Leaflet · HTML · CSS |
 
 각 프로젝트의 문제, 해결 방법, 확인한 결과, 한계와 다음 개선은 PDF의 해당 페이지에 있습니다.
 
