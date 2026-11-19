@@ -1,4 +1,27 @@
-# portfolio-pdf
+# 백민하 포트폴리오
+
+데이터 분석가 지망생 백민하의 포트폴리오입니다. 제출용 PDF는 [`public/portfolio.pdf`](public/portfolio.pdf)이고, 아래 내용은 PDF와 같습니다.
+
+- 소개: 제주대학교 전산통계학과 졸업 · 우리WON 청년IT아카데미 1기 · 제주대학교 × UPSTAGE AI 중급 부트캠프
+- 관심 분야: 보험·금융 서비스 데이터 분석, 고객에게 맞는 상품 추천과 안내
+- 기술: Python · R · SQL · HTML · CSS
+- 연락처: o2.mingha@gmail.com
+- 저장소: https://github.com/o2minga/portfolio-pdf
+
+## 프로젝트
+
+| # | 프로젝트 | 형태 | 내 담당 | 핵심 기술 |
+| --- | --- | --- | --- | --- |
+| 01 | ForWON: 금융 업무의 막힌 순간까지 이해하는 AI 가이드 (2026.10) | 5인 팀 | 기획 · UI/UX · 고객 페이지 개발 | Spring Boot · Spring AI · OpenAI API · React / Vite · JPA · MySQL |
+| 02 | SK하이닉스 주가 예측: Transformer 기반 시계열 모델 (2025.03~2025.06) | 4인 팀 | 데이터 엔지니어링 · 전처리 | Python · PyTorch · Transformer · FFT · SHAP · LIME |
+| 03 | 제주 관광객 수요 예측: 시계열 분석으로 12개월 앞을 보다 (2024.11~2024.12) | 개인 | 분석부터 예측까지 전체 | R · 시계열 분해 · ADF 검정 · ACF·PACF · SARIMA |
+| 04 | 제주 4·3 기록을 스토리 웹페이지로: AI 워크플로우 구축 (2026.08) | 2인 팀 | 에이전트·스킬 설계 · 오케스트레이션 · 웹 연동·검증 | AI 에이전트 · 스킬 · 오케스트레이션 · Supabase · Leaflet |
+
+각 프로젝트의 문제, 해결 방법, 확인한 결과, 한계와 다음 개선은 PDF의 해당 페이지에 있습니다.
+
+---
+
+# 포트폴리오 PDF 제작 도구
 
 HTML로 작성한 포트폴리오를 PDF로 만들고, 웹 PDF 뷰어로 보여주는 프로젝트입니다.
 
