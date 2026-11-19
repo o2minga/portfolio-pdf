@@ -7,15 +7,16 @@
 - 기술: Python · R · SQL · HTML · CSS
 - 연락처: o2.mingha@gmail.com
 - GitHub: https://github.com/o2minga
+- 포트폴리오 저장소: https://github.com/o2minga/portfolio-pdf
 
 ## 프로젝트
 
 | # | 프로젝트 | 기간 | 형태 | 내 담당 | 상태 | 핵심 기술 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 01 | ForWON: 금융 업무의 막힌 순간까지 이해하는 AI 가이드 | 2026.10 | 5인 팀 | 기획 · UI/UX · 고객 페이지 개발 | 핵심 흐름 구현 | Spring Boot · Spring AI · OpenAI API · React / Vite · JPA · SQL (MySQL) · HTML · CSS |
+| 01 | [ForWON: 금융 업무의 막힌 순간까지 이해하는 AI 가이드](https://github.com/eunbii0/bank-guide-server) | 2026.10 | 5인 팀 | 기획 · UI/UX · 고객 페이지 개발 | 핵심 흐름 구현 | Spring Boot · Spring AI · OpenAI API · React / Vite · JPA · SQL (MySQL) · HTML · CSS |
 | 02 | SK하이닉스 주가 예측: Transformer 기반 시계열 모델 | 2025.03 ~ 2025.06 | 4인 팀 | 데이터 엔지니어링 · 전처리 | 모델 학습·검증·해석 완료 | Python · PyTorch · Transformer · FFT 주기성 · SHAP · LIME |
 | 03 | 제주 관광객 수요 예측: 시계열 분석으로 12개월 앞을 보다 | 2024.11 ~ 2024.12 | 개인 (1인) | 데이터 탐색부터 예측까지 분석 전 과정 | 12개월 예측 완료 · 검정 재확인 예정 | R · 시계열 분해 · ADF 검정 · ACF·PACF · SARIMA |
-| 04 | 제주 4·3 기록을 스토리 웹페이지로: AI 워크플로우 구축 | 2026.08 | 2인 팀 | 에이전트·스킬·오케스트레이터 설계 · 웹 연동·검증 | 웹 반영까지 구현 · 이미지·오디오 자동화 예정 | AI 에이전트 · 스킬 · 오케스트레이션 · Supabase · Leaflet · HTML · CSS |
+| 04 | [제주 4·3 기록을 스토리 웹페이지로: AI 워크플로우 구축](https://github.com/o2minga/jeju43-storyweb-agent) | 2026.08 | 2인 팀 | 에이전트·스킬·오케스트레이터 설계 · 웹 연동·검증 | 웹 반영까지 구현 · 이미지·오디오 자동화 예정 | AI 에이전트 · 스킬 · 오케스트레이션 · Supabase · Leaflet · HTML · CSS |
 
 > 팀 프로젝트(01, 02, 04)는 팀 전체 결과를 정리한 것이며, 제가 직접 맡은 부분은 표의 "내 담당" 열과 PDF 각 페이지 맨 위 "내 담당" 칸에 적었습니다. 03은 개인 프로젝트입니다.
 
